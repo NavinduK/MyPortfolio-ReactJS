@@ -31,7 +31,7 @@ const Intro = () => {
 						</p>
 					</div>
 					<div className="col-md-12 col-lg-5 text-center">
-						<img  alt="Navindu Kavishka Intro" className="intro-img" src={introimg} height="500px" />
+						<img  alt="Navindu Kavishka Intro" className="intro-img" src={introimg} height="465px" />
 					</div>
 				</div>
 			</div>

@@ -3,6 +3,7 @@ import Intro from './Intro';
 import Skills from './Skills';
 import Gallery from './Gallery';
 import Slider from './Slider';
+import Footer from './Footer';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Skills/>
             <Slider/>
             <Gallery/>
+            <Footer/>
         </main>
     );
 };

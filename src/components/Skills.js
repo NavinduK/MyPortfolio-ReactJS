@@ -2,9 +2,9 @@ import React from 'react';
 
 const Skills = () => {
 	return (
-		<div className="portfolio-block skills" style={{ padding: '50px' }}>
+		<div className="portfolio-block skills" style={{ padding: '60px 50px 10px 50px' }}>
 			<div className="container">
-				<h2 className="text-center" style={{ marginBottom: '4vh', fontSize: '2.5rem' }}>
+				<h2 className="text-center" style={{ marginBottom: '4vh', fontSize: '2.2rem' }}>
 					Special Skills
 				</h2>
 				<div className="row" style={{ marginTop: 0 }}>
@@ -21,12 +21,8 @@ const Skills = () => {
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
-									HTML, CSS, JS, jQuery, Bootstrap
-									<br />
-									ReactJs, React-Native, Angular
-									<br />
-									NodeJS, PHP, Python, Java, Wordpress
-									<br />
+									HTML, CSS, JS, jQuery, Bootstrap, ReactJS, React-Native, Angular, NodeJS, Django, Express, Python, Java, PHP, MySQL, MongoDB, Android Studio, Wordpress
+									
 								</p>
 							</div>
 						</div>
@@ -50,6 +46,7 @@ const Skills = () => {
 									<br />
 									Adobe Lightroom
 									<br />
+									Adobe Premiere Pro
 								</p>
 							</div>
 						</div>
@@ -64,8 +61,7 @@ const Skills = () => {
 									Statistics &amp; Operations Research
 								</h4>
 								<p className="card-text">
-									After my Advance Level Examination I started 4 year B.Sc. Honors Degree Program in
-									Statistics and Operations Research.
+									In 2019 I started 4 year B.Sc. Honors Degree Program in Statistics and Operations Research. I studied Operations Research, Statistics and Computer Science as main subjects.
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
