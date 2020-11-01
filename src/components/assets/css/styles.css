@@ -1,9 +1,10 @@
 body {
-	font-family: Lato, Helvetica, sans-serif !important;
+	font-family: Lato !important;
+	margin:0!important;
 }
 
 p {
-	margin-top: 1rem !important;
+	margin-top: 1rem;
 }
 
 /* .portfolio-block-top {
@@ -29,8 +30,8 @@ p {
 }
 
 .navbar {
-	padding-top: 1rem !important;
-	padding-bottom: 1rem !important;
+	padding-top: 0.3rem !important;
+	padding-bottom: 0.3rem !important;
 }
 
 @media (max-width: 992px) {
@@ -149,4 +150,8 @@ p {
 	justify-content: center;
 	display: flex;
   	text-decoration: none;
+}
+
+.btn-social:hover .fa{
+		color:#b647d2;
 }

@@ -3,18 +3,19 @@ import Intro from './Intro';
 import Skills from './Skills';
 import Gallery from './Gallery';
 import Slider from './Slider';
-import Footer from './Footer';
+import './assets/css/styles.css';
+
 
 const Home = () => {
     return (
-        <main class="page lanidng-page">
+        <main className="page lanidng-page">
             <Intro/>
             <Skills/>
             <Slider/>
-            <Gallery/>
-            <Footer/>
+            {/* <Gallery/> */}
         </main>
     );
 };
+
 
 export default Home;

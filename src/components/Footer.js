@@ -47,7 +47,7 @@ const Footer = () => {
 										role="button"
 										target="_blank"
 										rel="noopener noreferrer"
-										href="https://www.facebook.com/navindukavishka.rajamanthree.9/"
+										href="https://www.facebook.com/navindu.kavishka.nk/"
 									>
 										<i className="fa fa-facebook" />
 									</a>
@@ -69,7 +69,7 @@ const Footer = () => {
 										role="button"
 										target="_blank"
 										rel="noopener noreferrer"
-										href="https://www.instagram.com/navindu.kavishka/"
+										href="https://www.instagram.com/navindu__kavishka/"
 									>
 										<i className="fa fa-instagram" />
 									</a>

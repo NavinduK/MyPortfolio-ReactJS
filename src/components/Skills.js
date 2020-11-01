@@ -16,13 +16,13 @@ const Skills = () => {
 							<div className="card-body">
 								<h4 className="card-title">Web &amp; Mobile Development</h4>
 								<p className="card-text">
-									I started learning Computer Science as&nbsp;a part of my degree program and after I
+									I started learning Computer Science as&nbsp;a part of my degree program and then I
 									start learning Web and Mobile Developing.
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
-									HTML, CSS, JS, jQuery, Bootstrap, ReactJS, React-Native, Angular, NodeJS, Django, Express, Python, Java, PHP, MySQL, MongoDB, Android Studio, Wordpress
-									
+									JS, jQuery, Bootstrap, React, Reactnative, Angular, Node, Django, Express, Python,
+									Java, PHP, MySQL, MongoDB, Firebase, Android Studio, Wordpress
 								</p>
 							</div>
 						</div>
@@ -35,8 +35,8 @@ const Skills = () => {
 							<div className="card-body">
 								<h4 className="card-title">Graphic Design</h4>
 								<p className="card-text">
-									Turning point of my life is learning graphic designing. Its the first thing I
-									involved in the field of technology.
+									The root of my online entrepreneurship. I learned Graphic Design from my teenage and
+									started my career as a Freelancer.
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
@@ -61,13 +61,15 @@ const Skills = () => {
 									Statistics &amp; Operations Research
 								</h4>
 								<p className="card-text">
-									In 2019 I started 4 year B.Sc. Honors Degree Program in Statistics and Operations Research. I studied Operations Research, Statistics and Computer Science as main subjects.
+									In 2019 I started 4 year B.Sc. Honors Degree Program in Statistics and Operations
+									Research. I studied Operations Research, Statistics and Computer Science as main
+									subjects.
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
 									R, Rstudio
 									<br />
-									Minitab, Matlab
+									Minitab
 									<br />
 									Lingo,&nbsp;Excel&nbsp;
 									<br />
