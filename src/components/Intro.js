@@ -25,7 +25,7 @@ const Intro = () => {
 						</p>
 						<p className="text-white mobile-intro4" style={{ fontSize: '1.3rem', lineHeight: '1.7rem' }}>
 							I'm a Sri Lankan who skilled on Web Developing and Graphic Designing.&nbsp;Currently i'm a
-							<br />
+							
 							student&nbsp;undergraduate at University Of Peradeniya through BSc. Statistics and
 							Operations Research.
 						</p>

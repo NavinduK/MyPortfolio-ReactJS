@@ -4,20 +4,26 @@ import '../components/assets/css/lightgallery.css';
 
 const Graphic = () => {
 	const [data, setData] = useState([]);
+	// const [loading, setLoading] = useState(false);	
 
 	useEffect(() => {
 		window.lightGal();
-		const fetchData = async () => {
-			const db = firebase.firestore();
-			const myData = await db.collection('graphics').get();
-			setData(myData.docs.map((doc) => doc.data()));
-		};
-		fetchData();
+		// const fetchData = async () => {
+		// 	const db = firebase.firestore();
+		// 	const myData = await db.collection('graphics').get();
+		// 	setData(myData.docs.map((doc) => doc.data()));
+		// };
+		// fetchData();
+
+		// setTimeout(() => {
+		// 	setLoading(true);
+		// }, 3000);
 	}, []);
 
-	// const gallery = data.map((item,index) => (
+	// const gallery = data.map((item) => (
 	// 	<li
-	// 		key={item.index}
+	// 		key={item.title}
+	// 		id={item.title}
 	// 		className="col-xs-6 col-sm-4 col-md-4 col-lg-3"
 	// 		data-src={item.img}
 	// 		data-sub-html={`<h4>${item.title}</h4><p>${item.desc}</p>`}
@@ -29,28 +35,38 @@ const Graphic = () => {
 	// ));
 
 	function galerytemp(i) {
+		if(data[i]?.title==null){
+			return <li style={{ display:'none'}}></li>;
+		}
 		return (
 			<li
 				className="allcol col-xs-12 col-sm-12 col-md-4 col-lg-3"
 				data-src={data[i]?.img}
 				data-sub-html={`<h4>${data[i]?.title}</h4><p>${data[i]?.desc}</p>`}
 			>
-				<a href="" style={{ cursor: 'pointer' }}>
-					<img className="img-responsive" src={data[i]?.img} alt="Thumb-1" />
+				<a href="#" style={{ cursor: 'pointer' }}>
+					<img className="img-responsive" src={data[i]?.img} alt={data[i]?.title} />
 				</a>
 			</li>
 		);
 	}
 
+	// if (!loading) {
+	// 	return <h1>loading</h1>;
+	// }
+
 	return (
-		<div className="container">
+		<div className="container" style={{ minHeight: '100vh'}}>
 			<div className="demo-gallery">
-				<h2 className="text-center" style={{ marginBottom: '3vh',marginTop: '105px', fontSize: '2rem' }}>
+				<h2 className="text-center" style={{ marginBottom: '3vh', marginTop: '105px', fontSize: '2rem' }}>
 					Graphic Design
 				</h2>
+				
 				<ul id="lightgallery" className="list-unstyled row">
-					{/* {gallery} */}
-					{/* //My map() not working thats why doing this silly thing */}
+					{/* {gallery} */} 
+
+					{/* My map() not working with the external JS libraries of this Boostrap gallery
+						thats why doing this silly thing. I expect to add 50+ images in future */}
 					{galerytemp(0)}
 					{galerytemp(1)}
 					{galerytemp(2)}
@@ -71,6 +87,42 @@ const Graphic = () => {
 					{galerytemp(17)}
 					{galerytemp(18)}
 					{galerytemp(19)}
+					{galerytemp(20)}
+					{galerytemp(21)}
+					{galerytemp(22)}
+					{galerytemp(23)}
+					{galerytemp(24)}
+					{galerytemp(25)}
+					{galerytemp(26)}
+					{galerytemp(27)}
+					{galerytemp(28)}
+					{galerytemp(29)}
+					{galerytemp(30)}
+					{galerytemp(31)}
+					{galerytemp(32)}
+					{galerytemp(33)}
+					{galerytemp(34)}
+					{galerytemp(35)}
+					{galerytemp(36)}
+					{galerytemp(37)}
+					{galerytemp(38)}
+					{galerytemp(39)}
+					{galerytemp(40)}
+					{galerytemp(41)}
+					{galerytemp(42)}
+					{galerytemp(43)}
+					{galerytemp(44)}
+					{galerytemp(45)}
+					{galerytemp(46)}
+					{galerytemp(47)}
+					{galerytemp(48)}
+					{galerytemp(49)}
+					{galerytemp(50)}
+					{galerytemp(51)}
+					{galerytemp(52)}
+					{galerytemp(53)}
+					{galerytemp(54)}
+					{galerytemp(55)}
 				</ul>
 			</div>
 		</div>

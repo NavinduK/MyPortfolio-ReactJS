@@ -8,7 +8,6 @@
     width: 200px;
 }
 .demo-gallery > ul > li a {
-    border: 3px solid #FFF;
     border-radius: 3px;
     display: block;
     overflow: hidden;

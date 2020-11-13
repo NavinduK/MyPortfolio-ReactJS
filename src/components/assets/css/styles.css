@@ -1,9 +1,29 @@
-body {
-	font-family: Lato !important;
-	margin:0!important;
+
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/Raleway-Regular.ttf);
 }
 
-p {
+body {
+	margin: 0 !important;
+	background: #f7fafc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Lato !important;
+}
+
+p,a,span {
+	
+	font-family: 'raleway' !important;
+}
+
+p{
 	margin-top: 1rem;
 }
 
@@ -129,17 +149,16 @@ p {
 /* -------------------------------------- */
 
 .footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
-    color: #fff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
+	color: #fff;
 }
 
 .btn-social {
-    width: 3rem;
-    height: 3rem;
+	width: 3rem;
+	height: 3rem;
 }
-
 
 .fa {
 	padding: 0.43rem 0;
@@ -149,9 +168,17 @@ p {
 	align-self: center;
 	justify-content: center;
 	display: flex;
-  	text-decoration: none;
+	text-decoration: none;
 }
 
-.btn-social:hover .fa{
-		color:#b647d2;
+.btn-social:hover .fa {
+	color: #b647d2;
+}
+
+.special-skill-item {
+	background: none;
+}
+
+.card{
+	box-shadow: none !important;
 }

@@ -8,7 +8,7 @@ import './assets/css/styles.css';
 
 const Home = () => {
     return (
-        <main className="page lanidng-page">
+        <main className="page lanidng-page" style={{ minHeight: '100vh'}}>
             <Intro/>
             <Skills/>
             <Slider/>

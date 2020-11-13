@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
 	return (
-		<div className="portfolio-block skills" style={{ padding: '60px 50px 10px 50px' }}>
+		<div className="portfolio-block skills" style={{background:'#fff', padding: '60px 50px 10px 50px' }}>
 			<div className="container">
 				<h2 className="text-center" style={{ marginBottom: '4vh', fontSize: '2.2rem' }}>
 					Special Skills

@@ -6,14 +6,25 @@ import Navigation from './components/Navigation';
 import Graphic from './components/Graphic';
 import Home from './components/Home';
 import Web from './components/Web';
+import Profile from './components/Profile';
 import Footer from './components/Footer';
 
-
 function App() {
+	const [graphicData, setGraphicData] = useState([]);
+	const [webData, setData] = useState([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const db = firebase.firestore();
+			const myData = await db.collection('graphics').get();
+			setData(myData.docs.map((doc) => doc.data()));
+		};
+		fetchData();
+	}, []);
 	return (
 		<div className="App">
 			<Router>
-			<Navigation />
+				<Navigation />
 				<Switch>
 					<Route exact path="/">
 						<Home />
@@ -24,8 +35,11 @@ function App() {
 					<Route path="/web-design">
 						<Web />
 					</Route>
+					<Route path="/navindu-kavishka">
+						<Profile />
+					</Route>
 				</Switch>
-				<Footer/>
+				<Footer />
 			</Router>
 		</div>
 	);
