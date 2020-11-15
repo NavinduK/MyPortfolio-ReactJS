@@ -1,38 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import firebase from '../firebase';
+import React, { useEffect } from 'react';
 import '../components/assets/css/lightgallery.css';
 
-const Graphic = () => {
-	const [data, setData] = useState([]);
-	// const [loading, setLoading] = useState(false);	
+const Graphic = ({data}) => {
 
 	useEffect(() => {
 		window.lightGal();
-		// const fetchData = async () => {
-		// 	const db = firebase.firestore();
-		// 	const myData = await db.collection('graphics').get();
-		// 	setData(myData.docs.map((doc) => doc.data()));
-		// };
-		// fetchData();
-
-		// setTimeout(() => {
-		// 	setLoading(true);
-		// }, 3000);
 	}, []);
-
-	// const gallery = data.map((item) => (
-	// 	<li
-	// 		key={item.title}
-	// 		id={item.title}
-	// 		className="col-xs-6 col-sm-4 col-md-4 col-lg-3"
-	// 		data-src={item.img}
-	// 		data-sub-html={`<h4>${item.title}</h4><p>${item.desc}</p>`}
-	// 	>
-	// 		<a style={{ cursor: 'pointer' }}>
-	// 			<img className="img-responsive" src={item.img} alt="Thumb-1" />
-	// 		</a>
-	// 	</li>
-	// ));
 
 	function galerytemp(i) {
 		if(data[i]?.title==null){
@@ -44,16 +17,12 @@ const Graphic = () => {
 				data-src={data[i]?.img}
 				data-sub-html={`<h4>${data[i]?.title}</h4><p>${data[i]?.desc}</p>`}
 			>
-				<a href="#" style={{ cursor: 'pointer' }}>
+				<a style={{ cursor: 'pointer' }}>
 					<img className="img-responsive" src={data[i]?.img} alt={data[i]?.title} />
 				</a>
 			</li>
 		);
 	}
-
-	// if (!loading) {
-	// 	return <h1>loading</h1>;
-	// }
 
 	return (
 		<div className="container" style={{ minHeight: '100vh'}}>
@@ -64,7 +33,6 @@ const Graphic = () => {
 				
 				<ul id="lightgallery" className="list-unstyled row">
 					{/* {gallery} */} 
-
 					{/* My map() not working with the external JS libraries of this Boostrap gallery
 						thats why doing this silly thing. I expect to add 50+ images in future */}
 					{galerytemp(0)}

@@ -24,10 +24,7 @@ const Intro = () => {
 							A designer who loves to find digital solutions for real problems
 						</p>
 						<p className="text-white mobile-intro4" style={{ fontSize: '1.3rem', lineHeight: '1.7rem' }}>
-							I'm a Sri Lankan who skilled on Web Developing and Graphic Designing.&nbsp;Currently i'm a
-							
-							student&nbsp;undergraduate at University Of Peradeniya through BSc. Statistics and
-							Operations Research.
+							I'm a Sri Lankan who skilled on Web Developing and Graphic Designing. Currently i'm a student undergraduate at University Of Peradeniya through BSc. Statistics and Operations Research.
 						</p>
 					</div>
 					<div className="col-md-12 col-lg-5 text-center">

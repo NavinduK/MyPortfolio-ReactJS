@@ -71,8 +71,7 @@ const Skills = () => {
 									<br />
 									Minitab
 									<br />
-									Lingo,&nbsp;Excel&nbsp;
-									<br />
+									Lingo, Excel
 								</p>
 							</div>
 						</div>
