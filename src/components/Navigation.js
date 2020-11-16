@@ -26,12 +26,12 @@ const Navigation = () => {
 							</li>
 							<li className="nav-item" role="presentation">
 								<Link className="nav-link" to="/graphic-design">
-									Graphic Design
+									Designs
 								</Link>
 							</li>
 							<li className="nav-item" role="presentation">
 								<Link className="nav-link" to="/web-design">
-									Web Design
+									Developments
 								</Link>
 							</li>
 							<li className="nav-item" role="presentation">

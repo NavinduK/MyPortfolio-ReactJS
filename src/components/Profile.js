@@ -2,7 +2,7 @@ import React from 'react';
 import introimg from './assets/img/intro-img.png';
 import '../components/assets/css/profile.css';
 
-const Profile = () => {
+const Profile = ({data}) => {
 	return (
 		<div className="profile-page" >
 			<div className="parallaxProf">
@@ -22,26 +22,35 @@ const Profile = () => {
 										<div className="name">
 											<h3 className="title">Navindu Kavishka Rajamanthree</h3>
 											<h6>Web Developer | Graphic Designer</h6>
-											<a href="#pablo" className="btn btn-just-icon btn-link btn-dribbble">
-												<i className="fa fa-dribbble" />
+
+											<a href={data[0]?.github} className="btn btn-just-icon btn-link btn-dribbble" rel="noopener noreferrer" target="_blank">
+												<i className="fa fa-github" />
 											</a>
-											<a href="#pablo" className="btn btn-just-icon btn-link btn-twitter">
+											<a href={data[0]?.linkedin} className="btn btn-just-icon btn-link btn-dribbble" rel="noopener noreferrer" target="_blank">
+												<i className="fa fa-linkedin" />
+											</a>
+											<a href={data[0]?.twitter} className="btn btn-just-icon btn-link btn-twitter" rel="noopener noreferrer" target="_blank">
 												<i className="fa fa-twitter" />
 											</a>
-											<a href="#pablo" className="btn btn-just-icon btn-link btn-pinterest">
-												<i className="fa fa-pinterest" />
+											<a href={data[0]?.instagram} className="btn btn-just-icon btn-link btn-twitter" rel="noopener noreferrer" target="_blank">
+												<i className="fa fa-instagram" />
+											</a>
+											<a href={data[0]?.stack} className="btn btn-just-icon btn-link btn-twitter" rel="noopener noreferrer" target="_blank">
+												<i className="fa fa-stack-overflow" />
+											</a>
+											<a href={data[0]?.fb} className="btn btn-just-icon btn-link btn-pinterest" rel="noopener noreferrer" target="_blank">
+												<i className="fa fa-facebook" />
 											</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div className="description text-center">
-								<p>
-									An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
-									Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
-									it a warm, intimate feel with a solid groove structure.
-								</p>
+							<div className="text-center">
+								<p>B.Sc. (Honours) in Statistics & Operations Research - University Of Peradeniya</p>
+								<a href={data[1]?.uniProf} rel="noopener noreferrer" target="_blank">University Student Profile</a>
 							</div>
+							<hr style={{width:"50%",marginLeft:"auto",marginRight:"auto"}}/>
+
 							<div className="description text-center">
 								<p>
 									An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
