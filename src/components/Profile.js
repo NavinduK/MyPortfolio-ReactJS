@@ -58,28 +58,7 @@ const Profile = ({data}) => {
 									it a warm, intimate feel with a solid groove structure.
 								</p>
 							</div>
-							<div className="description text-center">
-								<p>
-									An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
-									Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
-									it a warm, intimate feel with a solid groove structure.
-								</p>
-							</div>
-							<div className="description text-center">
-								<p>
-									An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
-									Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
-									it a warm, intimate feel with a solid groove structure.
-								</p>
-							</div>
-							<div className="description text-center">
-								<p>
-									An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
-									Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
-									it a warm, intimate feel with a solid groove structure.
-								</p>
-							</div>
-							<div>Navindu</div>
+							
 						</div>
 					</div>
 				</div>

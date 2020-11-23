@@ -13,8 +13,8 @@ const Intro = () => {
 						className="col-md-12 col-lg-5 offset-lg-1 text"
 						style={{ paddingTop: '3vh' }}
 					>
-						<h3 className="text-white mobile-intro1" style={{ fontSize: '3rem' }}>
-							Hello
+						<h3 className="text-white mobile-intro1" style={{ fontSize: '2.5rem' }}>
+							Hello World :)
 						</h3>
 						<h2 className="mobile-intro2">
 							<strong>I'm Navindu Kavishka</strong>
@@ -24,7 +24,7 @@ const Intro = () => {
 							A designer who loves to find digital solutions for real problems
 						</p>
 						<p className="text-white mobile-intro4" style={{ fontSize: '1.3rem', lineHeight: '1.7rem' }}>
-							I'm a Sri Lankan who skilled on Web Developing and Graphic Designing. Currently i'm a student undergraduate at University Of Peradeniya through BSc. Statistics and Operations Research.
+							I'm a Sri Lankan who skilled on Web Developing and Graphic Designing. Currently i'm a student undergraduate at University Of Peradeniya through BSc. (hons) Statistics and Operations Research.
 						</p>
 					</div>
 					<div className="col-md-12 col-lg-5 text-center">
