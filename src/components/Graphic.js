@@ -13,19 +13,19 @@ const Graphic = ({data}) => {
 		}
 		return (
 			<li
-				className="allcol col-xs-12 col-sm-12 col-md-4 col-lg-3"
+				className="allcol col-6 col-sm-4 col-lg-3"
 				data-src={data[i]?.img}
 				data-sub-html={`<h4>${data[i]?.title}</h4><p>${data[i]?.desc}</p>`}
 			>
-				<a style={{ cursor: 'pointer' }}>
-					<img className="img-responsive" src={data[i]?.img} alt={data[i]?.title} />
+				<a href="/#" style={{ cursor: 'pointer' }}>
+					<img className="img-responsive" src={data[i]?.thumb} alt={data[i]?.title} />
 				</a>
 			</li>
 		);
 	}
 
 	return (
-		<div className="container" style={{ minHeight: '100vh'}}>
+		<div className="container" style={{ minHeight: '100vh',marginBottom:'5vh'}}>
 			<div className="demo-gallery">
 				<h2 className="text-center" style={{ marginBottom: '3vh', marginTop: '105px', fontSize: '2rem' }}>
 					Graphic Design

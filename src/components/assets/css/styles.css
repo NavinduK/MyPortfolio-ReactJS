@@ -1,12 +1,11 @@
-
 @font-face {
-	font-family: raleway;
-	src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
 }
 
 body {
-	margin: 0 !important;
-	background: #f7fafc;
+    margin: 0 !important;
+    background: #f7fafc;
 }
 
 h1,
@@ -15,16 +14,37 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Lato !important;
+    font-family: Lato !important;
 }
 
-p,a,span {
-	
-	font-family: 'raleway' !important;
+p,
+a,
+span {
+    font-family: "raleway" !important;
 }
 
-p{
-	margin-top: 1rem;
+p {
+    margin-top: 1rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 240px !important;
+    }
+}
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 190px;
+    }
+}
+
+.carousel-item img {
+	height: 140px;
+    object-fit: cover;
 }
 
 /* .portfolio-block-top {
@@ -35,150 +55,149 @@ p{
 	max-height: 900px;
 } */
 .block-height-top {
-	padding: 9vh 0 9vh 0;
+    padding: 5vh 0 5vh 0;
 }
 .gradient {
-	background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
-	color: #fff;
+    background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
+    color: #fff;
 }
 .gradientParallax {
-	background: rgba(151, 8, 156, 0.7);
+    background: rgba(151, 8, 156, 0.7);
 }
-
 .portfolio-navbar.navbar {
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
 .navbar {
-	padding-top: 0.3rem !important;
-	padding-bottom: 0.3rem !important;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
 }
 
 @media (max-width: 992px) {
-	.intro-img {
-		height: 45vh;
-	}
-	.mobile-intro1 {
-		margin-top: 7vh;
-		font-size: 2rem !important;
-	}
-	.mobile-intro2 {
-		font-size: 1.5rem !important;
-	}
-	.mobile-intro3 {
-		font-size: 1.2rem !important;
-	}
-	.portfolio-block-top {
-		padding-top: 5vh !important;
-	}
-	.text {
-		text-align: center !important;
-	}
+    .intro-img {
+        height: 45vh;
+    }
+    .mobile-intro1 {
+        margin-top: 7vh;
+        font-size: 2rem !important;
+    }
+    .mobile-intro2 {
+        font-size: 1.5rem !important;
+    }
+    .mobile-intro3 {
+        font-size: 1.2rem !important;
+    }
+    .portfolio-block-top {
+        padding-top: 5vh !important;
+    }
+    .text {
+        text-align: center !important;
+    }
 }
 @media (max-width: 300px) {
-	.logo-text {
-		font-size: 4vw !important;
-	}
-	.logo img {
-		width: 50px !important;
-		height: 30.5px !important;
-	}
+    .logo-text {
+        font-size: 4vw !important;
+    }
+    .logo img {
+        width: 50px !important;
+        height: 30.5px !important;
+    }
 }
 @media (max-width: 365px) {
-	.logo-text {
-		font-size: 4.85vw;
-	}
-	.logo img {
-		width: 60px;
-		height: 36.6px;
-	}
+    .logo-text {
+        font-size: 4.85vw;
+    }
+    .logo img {
+        width: 60px;
+        height: 36.6px;
+    }
 }
 @media (max-width: 992px) {
-	.mobile-intro4 {
-		display: none;
-	}
+    .mobile-intro4 {
+        display: none;
+    }
 }
 .section-top-margin {
-	margin-top: 10vh;
+    margin-top: 10vh;
 }
 .special-skill-item .icon {
-	text-align: center;
-	font-size: 40px !important;
-	background-color: #af3ecc !important;
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 69px;
-	display: inline-block;
-	border-radius: 50%;
+    text-align: center;
+    font-size: 40px !important;
+    background-color: #af3ecc !important;
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    line-height: 69px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .text {
-	text-align: right;
+    text-align: right;
 }
 
 .offset-lg-1 {
-	margin-left: 3vw !important;
+    margin-left: 3vw !important;
 }
 
 @media (min-width: 992px) {
-	.portfolio-laptop-mockup .screen {
-		width: 380px !important;
-		height: 260px !important;
-	}
+    .portfolio-laptop-mockup .screen {
+        width: 380px !important;
+        height: 260px !important;
+    }
 
-	.portfolio-laptop-mockup .keyboard {
-		width: 410px !important;
-		height: 13px !important;
-	}
+    .portfolio-laptop-mockup .keyboard {
+        width: 410px !important;
+        height: 13px !important;
+    }
 }
 
 .parallax {
-	/* The image used */
-	background-image: url('../img/Web-Development.jpg');
+    /* The image used */
+    background-image: url("../img/Web-Development.jpg");
 
-	/* Full height */
+    /* Full height */
 
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* -------------------------------------- */
 
 .footer {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
-	color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
+    color: #fff;
 }
 
 .btn-social {
-	width: 3rem;
-	height: 3rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .fa {
-	padding: 0.43rem 0;
-	font-size: 1.3rem;
-	font-family: FontAwesome;
-	align-content: center;
-	align-self: center;
-	justify-content: center;
-	display: flex;
-	text-decoration: none;
+    padding: 0.43rem 0;
+    font-size: 1.3rem;
+    font-family: FontAwesome;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
 
 .btn-social:hover .fa {
-	color: #b647d2;
+    color: #b647d2;
 }
 
 .special-skill-item {
-	background: none;
+    background: none;
 }
 
-.card{
-	box-shadow: none !important;
+.card {
+    box-shadow: none !important;
 }

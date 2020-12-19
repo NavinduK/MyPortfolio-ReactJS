@@ -14,7 +14,7 @@ const Web = ({data}) => {
 							data?.map((item) => (
 								<div key={item.title} className="web-card">
 									<div className="web-card__img">
-										<img src={item.img} alt="Web Project" />
+										<img src={item.thumb} alt="Web Project" />
 									</div>
 									<div className="web-card__info">
 										<div className="web-card__date">

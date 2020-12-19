@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Slider = () => {
+const Slider = ({data}) => {
 	return (
 		<div className="website ">
 			<div className="parallax">
@@ -11,19 +11,12 @@ const Slider = () => {
 								className="text-white"
 								style={{ fontSize: '2rem', textAlign: 'center', marginBottom: '5vh' }}
 							>
-								Web Development
+								Web & Mobile Development
 							</h2>
 							<div className="d-flex justify-content-center row align-items-center">
 								<div className="col-md-12 col-lg-5 text">
 									<p className="text-white">
-										In the time of freelancing through Graphic Designing, it motivated me to learn
-										Web Development. I successfully learned WordPress as a beginner and continued
-										until Server-side Development through many programming languages, frameworks and platforms. I followed many online courses and tutorials to
-										learn web developing A to Z. After entered the University, I was able to learn
-										Computer Science as a subject, and there I learned programming languages and the
-										skills of programming. As the best chance of learning web development, I was
-										able to select for "Random Software Limited (RSL) Undergraduate Programme 2020"
-										and there I learned about Web Development deeply than I learned ago.
+									In the time of freelancing through Graphic Designing, it motivated me to learn Web Development, then I successfully learned WordPress as a beginner and continued learning until Server-side Development using various frameworks, environments, platforms, and languages. I followed many online courses and tutorials to learn web and also mobile developments A to Z. After entered the University, I was able to learn Computer Science as a subject, and there I learned different programming concepts and techniques. Now I am a developer who can serve a client to accomplish their web and mobile developments.
 									</p>
 								</div>
 								<div className="col-md-12 col-lg-6">
@@ -59,18 +52,21 @@ const Slider = () => {
 															<img
 																className="d-block w-100"
 																alt="First slide"
+																src={data[1]?.thumb}
 															/>
 														</div>
 														<div className="carousel-item">
 															<img
 																className="d-block w-100"
 																alt="Second slide"
+																src={data[2]?.thumb}
 															/>
 														</div>
 														<div className="carousel-item">
 															<img
 																className="d-block w-100"
 																alt="Third slide"
+																src={data[0]?.thumb}
 															/>
 														</div>
 													</div>

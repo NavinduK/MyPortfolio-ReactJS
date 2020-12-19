@@ -40,7 +40,7 @@ function App() {
 				<Navigation />
 				<Switch>
 					<Route exact path="/">
-						<Home />
+						<Home webData={webData} graphicData={graphicData}/>
 					</Route>
 					<Route path="/graphic-design">
 						<Graphic data={graphicData}/>

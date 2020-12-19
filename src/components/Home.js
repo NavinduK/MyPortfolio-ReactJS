@@ -6,13 +6,13 @@ import Slider from './Slider';
 import './assets/css/styles.css';
 
 
-const Home = () => {
+const Home = ({webData,graphicData}) => {
     return (
         <main className="page lanidng-page" style={{ minHeight: '100vh'}}>
             <Intro/>
             <Skills/>
-            <Slider/>
-            {/* <Gallery/> */}
+            <Slider data={webData}/>
+            <Gallery data={graphicData}/>
         </main>
     );
 };

@@ -1,6 +1,7 @@
 import React from "react";
-import introimg from "./assets/img/intro-img.png";
+import introimg from "./assets/img/profile.jpg";
 import "../components/assets/css/profile.css";
+import Contact from "./Contact";
 
 const Profile = ({ data }) => {
   return (
@@ -22,55 +23,56 @@ const Profile = ({ data }) => {
                     <div className="name">
                       <h3 className="title">Navindu Kavishka Rajamanthree</h3>
                       <h6>Web Developer | Graphic Designer</h6>
-
-                      <a
-                        href={data[0]?.github}
-                        className="btn btn-just-icon btn-link btn-dribbble"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-github" />
-                      </a>
-                      <a
-                        href={data[0]?.linkedin}
-                        className="btn btn-just-icon btn-link btn-dribbble"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-linkedin" />
-                      </a>
-                      <a
-                        href={data[0]?.twitter}
-                        className="btn btn-just-icon btn-link btn-twitter"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-twitter" />
-                      </a>
-                      <a
-                        href={data[0]?.instagram}
-                        className="btn btn-just-icon btn-link btn-twitter"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-instagram" />
-                      </a>
-                      <a
-                        href={data[0]?.stack}
-                        className="btn btn-just-icon btn-link btn-twitter"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-stack-overflow" />
-                      </a>
-                      <a
-                        href={data[0]?.fb}
-                        className="btn btn-just-icon btn-link btn-pinterest"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa fa-facebook" />
-                      </a>
+                      <div className="socoal-buttons">
+                        <a
+                          href={data[0]?.github}
+                          className="btn btn-just-icon btn-link btn-dribbble"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-github" />
+                        </a>
+                        <a
+                          href={data[0]?.linkedin}
+                          className="btn btn-just-icon btn-link btn-dribbble"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-linkedin" />
+                        </a>
+                        <a
+                          href={data[0]?.twitter}
+                          className="btn btn-just-icon btn-link btn-twitter"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-twitter" />
+                        </a>
+                        <a
+                          href={data[0]?.instagram}
+                          className="btn btn-just-icon btn-link btn-twitter"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-instagram" />
+                        </a>
+                        <a
+                          href={data[0]?.stack}
+                          className="btn btn-just-icon btn-link btn-twitter"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-stack-overflow" />
+                        </a>
+                        <a
+                          href={data[0]?.fb}
+                          className="btn btn-just-icon btn-link btn-pinterest"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa fa-facebook" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -84,19 +86,18 @@ const Profile = ({ data }) => {
                   href={data[1]?.uniProf}
                   rel="noopener noreferrer"
                   target="_blank"
+                  style={{color:"#9C30B5"}}
                 >
                   University Student Profile
                 </a>
               </div>
-              <hr
-                style={{
-                  width: "50%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                }}
-              />
 
-              <div className="description text-center">
+              <div
+                style={{
+                  marginTop: "20px",
+                }}
+                className="description text-center"
+              >
                 <p>
                   I am an accomplished programmer and designer enjoy using my
                   skills by solving real world problems through latest
@@ -105,6 +106,15 @@ const Profile = ({ data }) => {
                   mostly I spend my free time developing my own software.
                 </p>
               </div>
+              <hr
+                style={{
+                  width: "80%",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  marginTop: "30px",
+                }}
+              />
+              <Contact />
             </div>
           </div>
         </div>

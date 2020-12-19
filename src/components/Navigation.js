@@ -38,13 +38,7 @@ const Navigation = () => {
 								<Link className="nav-link" to="/navindu-kavishka">
 									Profile
 								</Link>
-							</li>
-							<li className="nav-item" role="presentation">
-								<Link className="nav-link" to="/contact">
-									Contact Me
-								</Link>
-							</li>
-							
+							</li>							
 						</ul>
 					</div>
 				</div>

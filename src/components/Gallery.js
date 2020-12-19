@@ -1,51 +1,61 @@
-import React, { useEffect, useState } from 'react';
-import firebase from '../firebase';
+import React, { useEffect } from 'react';
+import '../components/assets/css/lightgallery.css';
 
-const Gallery = () => {
-	// const [data, setData] = useState([]);
+const Gallery = ({ data }) => {
 
-	// useEffect(() => {
-	// 	const fetchData = async () => {
-	// 		const db = firebase.firestore();
-	// 		const myData = await db.collection('graphics').get();
-	// 		setData(myData.docs.map((doc) => doc.data()));
-	// 		console.log(data[0]);
-	// 	};
-	// 	fetchData();
-	// }, []);
+	useEffect(() => {
+		window.lightGal();
+	}, []);
 
 	return (
-		<div>
-			<h1>Gallery with hover effect</h1>
-			<div class="wrapper">
-				<div class="media">
-					<div class="layer">
-						<p>+ Paul Gilmore</p>
-					</div>
-					<img
-						src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop="
-						alt=""
-					/>
-				</div>
-				<div class="media">
-					<div class="layer">
-						<p>+ M. O' Neil</p>
-					</div>
-					<img
-						src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop="
-						alt=""
-					/>
-				</div>
-				<div class="media">
-					<div class="layer">
-						<p>+ N. Mehta</p>
-					</div>
-					<img
-						src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-						alt=""
-					/>
-				</div>
+		<div style={{background: 'rgb(255, 255, 255)'}} >
+		<div className="container">
+			<div className="demo-gallery" style={{paddingBottom: '6vh'}}>
+				<h2 className="text-center" style={{ paddingBottom: '3vh', paddingTop: '5vh', fontSize: '2rem' }}>
+					Graphic Design
+				</h2>
+
+				<ul id="lightgallery" className="list-unstyled row">
+					<li
+						className="allcol col-6 col-sm-3 col-lg-3"
+						data-src={data[14]?.img}
+						data-sub-html={`<h4>${data[14]?.title}</h4><p>${data[14]?.desc}</p>`}
+					>
+						<a href="/#"  style={{ cursor: 'pointer' }}>
+							<img className="img-responsive" src={data[14]?.thumb} alt={data[14]?.title} />
+						</a>
+					</li>
+					<li
+						className="allcol col-6 col-sm-3 col-lg-3"
+						data-src={data[5]?.img}
+						data-sub-html={`<h4>${data[5]?.title}</h4><p>${data[5]?.desc}</p>`}
+					>
+						<a href="/#" style={{ cursor: 'pointer' }}>
+							<img className="img-responsive" src={data[5]?.thumb} alt={data[5]?.title} />
+						</a>
+					</li>
+					<li
+						className="allcol col-6 col-sm-3 col-lg-3"
+						data-src={data[4]?.img}
+						data-sub-html={`<h4>${data[4]?.title}</h4><p>${data[4]?.desc}</p>`}
+					>
+						<a href="/#" style={{ cursor: 'pointer' }}>
+							<img className="img-responsive" src={data[4]?.thumb} alt={data[4]?.title} />
+						</a>
+					</li>
+					<li
+						className="allcol col-6 col-sm-3 col-lg-3"
+						data-src={data[1]?.img}
+						data-sub-html={`<h4>${data[1]?.title}</h4><p>${data[1]?.desc}</p>`}
+					>
+						<a href="/#" style={{ cursor: 'pointer' }}>
+							<img className="img-responsive" src={data[1]?.thumb} alt={data[1]?.title} />
+						</a>
+					</li>
+					
+				</ul>
 			</div>
+		</div>
 		</div>
 	);
 };

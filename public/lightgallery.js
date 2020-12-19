@@ -1507,23 +1507,43 @@
         });
 
         if (_this.s.closable) {
+            
+            var mydiv = document.getElementsByClassName('lg-img-wrap');
+            
+            for (var i = 0; i < mydiv.length; i++) {
+                mydiv[i].addEventListener('touchend', function (e) {
+                    
 
+                    if(_lgUtils2.default.hasClass(e.target, 'lg-img-wrap')){
+                    
+
+                    _this.destroy();
+                    }
+                });
+            }
+            
             // If you drag the slide and release outside gallery gets close on chrome
             // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
             _lgUtils2.default.on(_this.outer, 'mousedown.lg', function (e) {
+                console.log("closable2");
 
                 if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap')) {
                     mousedown = true;
+                    
                 } else {
                     mousedown = false;
+                    
                 }
             });
 
             _lgUtils2.default.on(_this.outer, 'mouseup.lg', function (e) {
 
-                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap') && mousedown) {
+                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap') || mousedown) {
+                    
+                    
                     if (!_lgUtils2.default.hasClass(_this.outer, 'lg-dragging')) {
                         _this.destroy();
+                        
                     }
                 }
             });

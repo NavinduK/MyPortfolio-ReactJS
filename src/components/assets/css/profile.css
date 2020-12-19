@@ -19,6 +19,10 @@
     background: rgba(151, 8, 156, 0);
 }
 
+.profile-content{
+    padding: 23px;
+}
+
 .header-filter::before {
     background-image: url("../img/background.jpg");
     background-attachment: fixed;
@@ -36,16 +40,15 @@
     background-size: cover;
 }
 
-.marginAdd{    
-    padding-top: 30vh;
-    padding-bottom: 10vh;
+.marginAdd{   
+    padding: 30vh 5vw 5vh 5vw;
 }
 
 .main {
     background: #FFF;
     position: relative;
     z-index: 3;
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
 }
 
@@ -88,7 +91,7 @@
 
 .profile-page .description {
     margin: 2px auto 0 ;
-    max-width: 600px;
+    max-width: 800px;
     color: rgb(109, 109, 109);
     font-weight: 700;
 }
@@ -166,4 +169,11 @@ img.rounded {
     color: #a361b3;
 }
 
+.name .btn.btn-link:hover{
+    background-color: transparent;
+    color: #5c1a6d;
+}
 
+.socoal-buttons{
+    margin-top: 10px;
+}
