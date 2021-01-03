@@ -116,6 +116,13 @@ p {
     .mobile-intro4 {
         display: none;
     }
+    .block-height-top h2{
+        margin-bottom: 1vh !important;
+    }
+    .seemoreslider{
+        margin-top: 2vh !important;
+
+    }
 }
 .section-top-margin {
     margin-top: 10vh;
@@ -150,6 +157,9 @@ p {
         width: 410px !important;
         height: 13px !important;
     }
+}
+.block-height-top h2{
+    margin-bottom: 4vh;
 }
 
 .parallax {

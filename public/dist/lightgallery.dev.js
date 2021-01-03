@@ -7,7 +7,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
  * http://sachinchoolur.github.io/lightgallery.js/
  * Copyright (c) 2016 Sachin N; 
  * @license GPLv3 
- */
+*/
 (function (f) {
   if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object" && typeof module !== "undefined") {
     module.exports = f();
@@ -1209,7 +1209,6 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
           if (!_this.lgBusy) {
             //Edit -- Navindu Kavishka -> && _this.items[_this.index+1].getAttribute('data-src') !=null
-            // console.log( _this.items[1].getAttribute('data-src'));
             if (_this.index + 1 < _this.___slide.length && _this.items[_this.index + 1].getAttribute('data-src') != null) {
               _this.index++;
 
@@ -1600,8 +1599,6 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
             _lgUtils2["default"].on(_this.outer, 'mousedown.lg', function (e) {
-              console.log("closable2");
-
               if (_lgUtils2["default"].hasClass(e.target, 'lg-outer') || _lgUtils2["default"].hasClass(e.target, 'lg-item') || _lgUtils2["default"].hasClass(e.target, 'lg-img-wrap')) {
                 mousedown = true;
               } else {

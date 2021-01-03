@@ -3,7 +3,7 @@
  * http://sachinchoolur.github.io/lightgallery.js/
  * Copyright (c) 2016 Sachin N; 
  * @license GPLv3 
- */(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Lightgallery = f()}})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+*/(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Lightgallery = f()}})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 (function (global, factory) {
     if (typeof define === "function" && define.amd) {
         define(['exports'], factory);
@@ -1158,7 +1158,6 @@
         var _this = this;
         if (!_this.lgBusy) {
             //Edit -- Navindu Kavishka -> && _this.items[_this.index+1].getAttribute('data-src') !=null
-            // console.log( _this.items[1].getAttribute('data-src'));
             if (_this.index + 1 < _this.___slide.length && _this.items[_this.index+1].getAttribute('data-src')!=null) {
                 _this.index++;
                 _lgUtils2.default.trigger(_this.el, 'onBeforeNextSlide', {
@@ -1507,43 +1506,30 @@
         });
 
         if (_this.s.closable) {
-            
             var mydiv = document.getElementsByClassName('lg-img-wrap');
-            
             for (var i = 0; i < mydiv.length; i++) {
                 mydiv[i].addEventListener('touchend', function (e) {
-                    
-
                     if(_lgUtils2.default.hasClass(e.target, 'lg-img-wrap')){
-                    
-
                     _this.destroy();
                     }
                 });
             }
-            
             // If you drag the slide and release outside gallery gets close on chrome
             // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
             _lgUtils2.default.on(_this.outer, 'mousedown.lg', function (e) {
-                console.log("closable2");
 
                 if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap')) {
                     mousedown = true;
-                    
                 } else {
                     mousedown = false;
-                    
                 }
             });
 
             _lgUtils2.default.on(_this.outer, 'mouseup.lg', function (e) {
 
-                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap') || mousedown) {
-                    
-                    
+                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap') || mousedown) {                    
                     if (!_lgUtils2.default.hasClass(_this.outer, 'lg-dragging')) {
                         _this.destroy();
-                        
                     }
                 }
             });

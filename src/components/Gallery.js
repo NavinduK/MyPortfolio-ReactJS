@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../components/assets/css/lightgallery.css';
+import {Link} from 'react-router-dom';
 
 const Gallery = ({ data }) => {
 
@@ -54,6 +55,9 @@ const Gallery = ({ data }) => {
 					</li>
 					
 				</ul>
+				<div className="text-center mt-3">
+					<Link style={{color:'#b647d2', fontWeight:'600'}} to="/graphic-design">See More</Link>
+				</div>
 			</div>
 		</div>
 		</div>

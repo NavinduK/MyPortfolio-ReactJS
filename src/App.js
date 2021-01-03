@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import './components/assets/bootstrap/css/bootstrap.css';
@@ -9,6 +9,7 @@ import Web from './components/Web';
 import Profile from './components/Profile';
 import Footer from './components/Footer';
 import firebase from './firebase';
+import ScrollToTop from './ScrollToTop';
 
 
 function App() {
@@ -37,22 +38,24 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Navigation />
-				<Switch>
-					<Route exact path="/">
-						<Home webData={webData} graphicData={graphicData}/>
-					</Route>
-					<Route path="/graphic-design">
-						<Graphic data={graphicData}/>
-					</Route>
-					<Route path="/web-design">
-						<Web data={webData}/>
-					</Route>
-					<Route path="/navindu-kavishka">
-						<Profile data={socialData}/>
-					</Route>
-				</Switch>
-				<Footer />
+				<ScrollToTop>
+					<Navigation />
+					<Switch>
+						<Route exact path="/">
+							<Home skillData={socialData[2]} webData={webData} graphicData={graphicData} />
+						</Route>
+						<Route path="/graphic-design">
+							<Graphic data={graphicData} />
+						</Route>
+						<Route path="/web-design">
+							<Web data={webData} />
+						</Route>
+						<Route path="/navindu-kavishka">
+							<Profile data={socialData} />
+						</Route>
+					</Switch>
+					<Footer />
+				</ScrollToTop>
 			</Router>
 		</div>
 	);

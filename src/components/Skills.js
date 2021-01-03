@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const Skills = ({data}) => {
 	return (
 		<div className="portfolio-block skills" style={{background:'#fff', padding: '60px 50px 10px 50px' }}>
 			<div className="container">
@@ -16,13 +16,11 @@ const Skills = () => {
 							<div className="card-body">
 								<h4 className="card-title">Web &amp; Mobile Development</h4>
 								<p className="card-text">
-									I started learning Computer Science as&nbsp;a part of my degree program and then I
-									start learning Web and Mobile Developing.
+									{data?.['web-desc']}
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
-									JS, jQuery, Bootstrap, React, Reactnative, Angular, Node, Django, Express, Python,
-									Java, PHP, MySQL, MongoDB, Firebase, Android Studio, Wordpress
+									{data?.['web-techs']}
 								</p>
 							</div>
 						</div>
@@ -35,8 +33,7 @@ const Skills = () => {
 							<div className="card-body">
 								<h4 className="card-title">Graphic Design</h4>
 								<p className="card-text">
-									The root of my online entrepreneurship. I learned Graphic Design from my teenage and
-									started my career as a Freelancer.
+								{data?.['graphic-desc']}
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
@@ -61,9 +58,8 @@ const Skills = () => {
 									Statistics &amp; Operations Research
 								</h4>
 								<p className="card-text">
-									In 2019 I started 4 year B.Sc. Honors Degree Program in Statistics and Operations
-									Research. I studied Operations Research, Statistics and Computer Science as main
-									subjects.
+								{data?.['or-desc']}
+
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>

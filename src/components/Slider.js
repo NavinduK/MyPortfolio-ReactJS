@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Slider = ({data}) => {
+const Slider = ({ wdata, sdata }) => {
 	return (
 		<div className="website ">
 			<div className="parallax">
@@ -9,14 +10,14 @@ const Slider = ({data}) => {
 						<div className="block-height-top">
 							<h2
 								className="text-white"
-								style={{ fontSize: '2rem', textAlign: 'center', marginBottom: '5vh' }}
+								style={{ fontSize: '2rem', textAlign: 'center'}}
 							>
 								Web & Mobile Development
 							</h2>
 							<div className="d-flex justify-content-center row align-items-center">
 								<div className="col-md-12 col-lg-5 text">
 									<p className="text-white">
-									In the time of freelancing through Graphic Designing, it motivated me to learn Web Development, then I successfully learned WordPress as a beginner and continued learning until Server-side Development using various frameworks, environments, platforms, and languages. I followed many online courses and tutorials to learn web and also mobile developments A to Z. After entered the University, I was able to learn Computer Science as a subject, and there I learned different programming concepts and techniques. Now I am a developer who can serve a client to accomplish their web and mobile developments.
+										{sdata}
 									</p>
 								</div>
 								<div className="col-md-12 col-lg-6">
@@ -52,21 +53,21 @@ const Slider = ({data}) => {
 															<img
 																className="d-block w-100"
 																alt="First slide"
-																src={data[1]?.thumb}
+																src={wdata[1]?.thumb}
 															/>
 														</div>
 														<div className="carousel-item">
 															<img
 																className="d-block w-100"
 																alt="Second slide"
-																src={data[2]?.thumb}
+																src={wdata[2]?.thumb}
 															/>
 														</div>
 														<div className="carousel-item">
 															<img
 																className="d-block w-100"
 																alt="Third slide"
-																src={data[0]?.thumb}
+																src={wdata[0]?.thumb}
 															/>
 														</div>
 													</div>
@@ -100,6 +101,9 @@ const Slider = ({data}) => {
 										<div className="keyboard" />
 									</div>
 								</div>
+							</div>
+							<div className="text-center seemoreslider">
+								<Link style={{ color: '#fff', fontWeight:'600' }} to="/web-design">See More</Link>
 							</div>
 						</div>
 					</div>
