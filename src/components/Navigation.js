@@ -3,6 +3,14 @@ import logo from './assets/img/logo.png';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
+	const [active,setActive] = React.useState(['active-item'])
+
+	const toggleActive = (index) => {
+		var temp = ['','','',''];
+		temp[index] = 'active-item';
+		setActive(temp);
+	}
+
 	return (
 		<div>
 			<nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
@@ -19,26 +27,34 @@ const Navigation = () => {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="nav navbar-nav ml-auto">
-							<li className="nav-item" role="presentation">
-								<Link className="nav-link" to="/">
+							<li className={`nav-item ${active[0]}`} id="Home" role="presentation">
+								<Link
+									onClick={()=>toggleActive(0)}
+									className="nav-link" to="/">
 									Home
 								</Link>
 							</li>
-							<li className="nav-item" role="presentation">
-								<Link className="nav-link" to="/graphic-design">
+							<li className={`nav-item ${active[1]}`} id="Designs" role="presentation">
+								<Link
+									onClick={()=>toggleActive(1)}
+									className="nav-link" to="/graphic-design">
 									Designs
 								</Link>
 							</li>
-							<li className="nav-item" role="presentation">
-								<Link className="nav-link" to="/web-design">
+							<li className={`nav-item ${active[2]}`} id="Dev" role="presentation">
+								<Link
+									onClick={()=>toggleActive(2)}
+									className="nav-link" to="/web-design">
 									Developments
 								</Link>
 							</li>
-							<li className="nav-item" role="presentation">
-								<Link className="nav-link" to="/navindu-kavishka">
+							<li className={`nav-item ${active[3]}`} id="Profile" role="presentation">
+								<Link
+									onClick={()=>toggleActive(3)}
+									className="nav-link" to="/navindu-kavishka">
 									Profile
 								</Link>
-							</li>							
+							</li>
 						</ul>
 					</div>
 				</div>

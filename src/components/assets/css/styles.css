@@ -27,6 +27,10 @@ p {
     margin-top: 1rem;
 }
 
+.active-item{
+    background: #f7fafc;
+}
+
 .navbar-nav {
     text-align: center;
 }
@@ -34,6 +38,9 @@ p {
 @media (min-width: 992px) {
     .carousel-item img {
         height: 240px !important;
+    }
+    .portfolio-block-top {
+        padding-top: 120px !important;
     }
 }
 @media (min-width: 768px) {
@@ -47,13 +54,9 @@ p {
     object-fit: cover;
 }
 
-/* .portfolio-block-top {
-	margin-top: 0vh !important;
-	padding-top: 11vh !important;
-	padding-bottom: 13vh !important;
-	height: 100vh !important;
-	max-height: 900px;
-} */
+.portfolio-block-top {
+	padding-top: 70px;
+}
 .block-height-top {
     padding: 5vh 0 5vh 0;
 }
@@ -71,6 +74,7 @@ p {
 .navbar {
     padding-top: 0.3rem !important;
     padding-bottom: 0.3rem !important;
+    min-height: 70px;
 }
 
 @media (max-width: 992px) {
@@ -78,7 +82,7 @@ p {
         height: 45vh;
     }
     .mobile-intro1 {
-        margin-top: 7vh;
+        margin-top: 3vh;
         font-size: 2rem !important;
     }
     .mobile-intro2 {
@@ -87,13 +91,11 @@ p {
     .mobile-intro3 {
         font-size: 1.2rem !important;
     }
-    .portfolio-block-top {
-        padding-top: 5vh !important;
-    }
     .text {
         text-align: center !important;
     }
 }
+
 @media (max-width: 300px) {
     .logo-text {
         font-size: 4vw !important;
@@ -119,17 +121,36 @@ p {
     .block-height-top h2{
         margin-bottom: 1vh !important;
     }
-    .seemoreslider{
-        margin-top: 2vh !important;
-
-    }
+}
+.seemoreslider{
+    margin-top: 4vh !important;
+}
+.seemoreslider a{
+    border: solid 1px #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.seemoregallery a{
+    border: solid 1px #b647d2;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.seemoreslider a:hover{
+   background-color: #fff;
+   color: #732188!important;
+}
+.seemoregallery a:hover{
+    background-color: #b647d2;
+    color:#fff!important;
 }
 .section-top-margin {
     margin-top: 10vh;
 }
 .special-skill-item .icon {
     text-align: center;
-    font-size: 40px !important;
+    font-size: 30px !important;
     background-color: #af3ecc !important;
     color: #fff;
     height: 70px;
@@ -137,6 +158,16 @@ p {
     line-height: 69px;
     display: inline-block;
     border-radius: 50%;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0.43rem 0;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px
 }
 
 .text {

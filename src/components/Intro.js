@@ -4,13 +4,13 @@ import introimg from './assets/img/intro-img.png';
 const Intro = () => {
 	return (
 		<div
-			className="portfolio-block-top website gradient portfolio-block"
-			style={{ marginTop: '-5px'}}
+			className="portfolio-block-top website gradient"
+			style={{ minHeight: '100vh' ,maxHeight: '105vh' }}
 		>
 			<div className="container">
 				<div className="swing animated row align-items-center block-height-top">
 					<div
-						className="col-md-12 col-lg-5 offset-lg-1 text"
+						className="col-md-12 col-lg-6 offset-lg-1 text"
 						style={{ paddingTop: '3vh' }}
 					>
 						<h3 className="text-white mobile-intro1" style={{ fontSize: '2.5rem' }}>

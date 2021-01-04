@@ -7,12 +7,12 @@ import './assets/css/styles.css';
 
 const Home = ({webData,graphicData,skillData}) => {
     return (
-        <main className="page lanidng-page" style={{ minHeight: '100vh'}}>
+        <div className="page lanidng-page">
             <Intro/>
             <Skills data={skillData}/>
             <Slider sdata={skillData?.['web-bio']} wdata={webData}/>
-            <Gallery data={graphicData}/>
-        </main>
+            <Gallery sdata={skillData?.['graphic-bio']} data={graphicData}/>
+        </div>
     );
 };
 

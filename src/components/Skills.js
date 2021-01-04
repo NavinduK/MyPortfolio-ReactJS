@@ -11,7 +11,7 @@ const Skills = ({data}) => {
 					<div className="col-md-4">
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
-								<i className="icon ion-android-desktop" />
+								<i className="icon fa-desktop" />
 							</div>
 							<div className="card-body">
 								<h4 className="card-title">Web &amp; Mobile Development</h4>
@@ -28,7 +28,7 @@ const Skills = ({data}) => {
 					<div className="col-md-4">
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
-								<i className="icon ion-paintbrush" />
+								<i className="icon fa-paint-brush" />
 							</div>
 							<div className="card-body">
 								<h4 className="card-title">Graphic Design</h4>
@@ -51,7 +51,7 @@ const Skills = ({data}) => {
 					<div className="col-md-4" style={{ paddingLeft: 0, paddingRight: 0 }}>
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
-								<i className="icon ion-pie-graph" />
+								<i className="icon fa-pie-chart" />
 							</div>
 							<div className="card-body">
 								<h4 className="card-title" style={{ fontSize: '1.48rem' }}>

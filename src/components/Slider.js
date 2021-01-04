@@ -16,7 +16,7 @@ const Slider = ({ wdata, sdata }) => {
 							</h2>
 							<div className="d-flex justify-content-center row align-items-center">
 								<div className="col-md-12 col-lg-5 text">
-									<p className="text-white">
+									<p className="mb-0 text-white">
 										{sdata}
 									</p>
 								</div>

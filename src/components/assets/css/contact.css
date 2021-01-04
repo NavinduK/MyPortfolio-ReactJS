@@ -50,7 +50,6 @@
 /*---------------------------------------------*/
 .formcon input {
 	outline: none;
-  border: none;
   text-align: center;
 }
 
@@ -70,7 +69,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .formcon textarea {
   outline: none;
-  border: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
   text-align: center;
@@ -163,12 +161,13 @@ input[type="number"]::-webkit-inner-spin-button {
   position: relative;
   display: block;
   width: 100%;
-  background: #f7f1f6;
+  background: #faf5fa;
   border-radius: 31px;
-  
+  border: solid 1px #e7b0f5;
   font-size: 18px;
   color: #8f8fa1;
   line-height: 1.2;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1)
 }
 
 

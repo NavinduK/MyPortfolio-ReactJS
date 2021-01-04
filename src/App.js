@@ -54,7 +54,7 @@ function App() {
 							<Profile data={socialData} />
 						</Route>
 					</Switch>
-					<Footer />
+					<Footer links={socialData[0]} contacts={socialData[1]}/>
 				</ScrollToTop>
 			</Router>
 		</div>

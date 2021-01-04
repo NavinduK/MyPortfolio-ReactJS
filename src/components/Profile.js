@@ -1,7 +1,7 @@
 import React from "react";
-import introimg from "./assets/img/profile.jpg";
 import "../components/assets/css/profile.css";
 import Contact from "./Contact";
+import introimg from '../components/assets/img/profile.jpg'
 
 const Profile = ({ data }) => {
   return (
@@ -15,14 +15,14 @@ const Profile = ({ data }) => {
                   <div className="profile">
                     <div className="avatar">
                       <img
-                        src={introimg}
+                        src={data[1]?.image || introimg} 
                         alt="Navindu Kavishka Rajamanthree"
                         className="img-raised rounded-circle img-fluid"
                       />
                     </div>
                     <div className="name">
                       <h3 className="title">Navindu Kavishka Rajamanthree</h3>
-                      <h6>Web Developer | Graphic Designer</h6>
+                      <h6>{data[2]?.jobtitle}</h6>
                       <div className="socoal-buttons">
                         <a
                           href={data[0]?.github}
@@ -99,11 +99,7 @@ const Profile = ({ data }) => {
                 className="description text-center"
               >
                 <p>
-                  I am an accomplished programmer and designer enjoy using my
-                  skills by solving real world problems through latest
-                  technologies and by turning various business ideas into a
-                  reality. I am obsessed with all the tech-related things and
-                  mostly I spend my free time developing my own software.
+                  {data[1]?.['bio']}
                 </p>
               </div>
               <hr
