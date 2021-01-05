@@ -1,15 +1,8 @@
 import React from 'react';
 import logo from './assets/img/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 const Navigation = () => {
-	const [active,setActive] = React.useState(['active-item'])
-
-	const toggleActive = (index) => {
-		var temp = ['','','',''];
-		temp[index] = 'active-item';
-		setActive(temp);
-	}
 
 	return (
 		<div>
@@ -27,33 +20,34 @@ const Navigation = () => {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="nav navbar-nav ml-auto">
-							<li className={`nav-item ${active[0]}`} id="Home" role="presentation">
-								<Link
-									onClick={()=>toggleActive(0)}
-									className="nav-link" to="/">
+							<li className={`nav-item`} id="Home" role="presentation">
+								<NavLink
+									exact
+									activeClassName='active-item'
+									className="nav-NavLink" to="/">
 									Home
-								</Link>
+								</NavLink>
 							</li>
-							<li className={`nav-item ${active[1]}`} id="Designs" role="presentation">
-								<Link
-									onClick={()=>toggleActive(1)}
-									className="nav-link" to="/graphic-design">
+							<li className={`nav-item`} id="Designs" role="presentation">
+								<NavLink
+									activeClassName='active-item'
+									className="nav-NavLink" to="/graphic-design">
 									Designs
-								</Link>
+								</NavLink>
 							</li>
-							<li className={`nav-item ${active[2]}`} id="Dev" role="presentation">
-								<Link
-									onClick={()=>toggleActive(2)}
-									className="nav-link" to="/web-design">
+							<li className={`nav-item`} id="Dev" role="presentation">
+								<NavLink
+									activeClassName='active-item'
+									className="nav-NavLink" to="/web-design">
 									Developments
-								</Link>
+								</NavLink>
 							</li>
-							<li className={`nav-item ${active[3]}`} id="Profile" role="presentation">
-								<Link
-									onClick={()=>toggleActive(3)}
-									className="nav-link" to="/navindu-kavishka">
+							<li className={`nav-item`} id="Profile" role="presentation">
+								<NavLink
+									activeClassName='active-item'
+									className="nav-NavLink" to="/navindu-kavishka">
 									Profile
-								</Link>
+								</NavLink>
 							</li>
 						</ul>
 					</div>

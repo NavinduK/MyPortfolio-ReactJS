@@ -12,16 +12,17 @@ const Gallery = ({ data, sdata }) => {
 		<div style={{ background: 'rgb(255, 255, 255)' }} >
 			<div className="container">
 				<div className="demo-gallery" style={{ paddingBottom: '6vh' }}>
-					<h2 className="text-center" style={{ paddingBottom: '3vh', paddingTop: '5vh', fontSize: '2rem' }}>
+					<h2 data-aos="zoom-in-down" data-aos-offset="200" className="text-center" style={{ paddingBottom: '3vh', paddingTop: '5vh', fontSize: '2rem' }}>
 						Graphic Design
-				</h2>
-					<div className="text-center mb-3">
+					</h2>
+					<div data-aos="zoom-in-down" data-aos-offset="200" className="text-center mb-3">
 						<p style={{ margin: '0 5vw' }}>
 							{sdata}
 						</p>
 					</div>
 					<ul id="lightgallery" className="list-unstyled row">
 						<li
+							data-aos="flip-up" data-aos-offset="150"  
 							className="allcol col-6 col-sm-3 col-lg-3"
 							data-src={data[14]?.img}
 							data-sub-html={`<h4>${data[14]?.title}</h4><p>${data[14]?.desc}</p>`}
@@ -31,6 +32,7 @@ const Gallery = ({ data, sdata }) => {
 							</a>
 						</li>
 						<li
+							data-aos="flip-up" data-aos-offset="150" data-aos-delay="100" 
 							className="allcol col-6 col-sm-3 col-lg-3"
 							data-src={data[5]?.img}
 							data-sub-html={`<h4>${data[5]?.title}</h4><p>${data[5]?.desc}</p>`}
@@ -40,6 +42,7 @@ const Gallery = ({ data, sdata }) => {
 							</a>
 						</li>
 						<li
+							data-aos="flip-up" data-aos-offset="150" data-aos-delay="100" 
 							className="allcol col-6 col-sm-3 col-lg-3"
 							data-src={data[4]?.img}
 							data-sub-html={`<h4>${data[4]?.title}</h4><p>${data[4]?.desc}</p>`}
@@ -49,6 +52,7 @@ const Gallery = ({ data, sdata }) => {
 							</a>
 						</li>
 						<li
+							data-aos="flip-up" data-aos-offset="150" data-aos-delay="150" 
 							className="allcol col-6 col-sm-3 col-lg-3"
 							data-src={data[1]?.img}
 							data-sub-html={`<h4>${data[1]?.title}</h4><p>${data[1]?.desc}</p>`}
@@ -59,7 +63,7 @@ const Gallery = ({ data, sdata }) => {
 						</li>
 
 					</ul>
-					<div className="text-center mt-4 seemoregallery">
+					<div data-aos="zoom-in" className="text-center mt-4 seemoregallery">
 						<Link style={{ color: '#b647d2', fontWeight: '600' }} to="/graphic-design">See More</Link>
 					</div>
 				</div>

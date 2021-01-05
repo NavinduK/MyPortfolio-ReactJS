@@ -1,14 +1,20 @@
 import React from 'react';
+import AOS from 'aos';
+AOS.init();
 
-const Skills = ({data}) => {
+const Skills = ({ data }) => {
 	return (
-		<div className="portfolio-block skills" style={{background:'#fff', padding: '60px 50px 10px 50px' }}>
-			<div className="container">
+		<div className="portfolio-block skills " style={{ background: '#fff', padding: '60px 10px 10px 10px' }}>
+			<div data-aos="zoom-in-down" data-aos-duration="1500" className="container">
 				<h2 className="text-center" style={{ marginBottom: '4vh', fontSize: '2.2rem' }}>
 					Special Skills
 				</h2>
 				<div className="row" style={{ marginTop: 0 }}>
-					<div className="col-md-4">
+					<div data-aos="zoom-out-down"
+						data-aos-offset="170"
+						data-aos-easing="ease-in-sine" 
+						className="col-md-4"
+					>
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
 								<i className="icon fa-desktop" />
@@ -25,7 +31,11 @@ const Skills = ({data}) => {
 							</div>
 						</div>
 					</div>
-					<div className="col-md-4">
+					<div data-aos="zoom-out-down"
+						data-aos-offset="170"
+						data-aos-easing="ease-in-sine" 
+					 	className="col-md-4"
+					 >
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
 								<i className="icon fa-paint-brush" />
@@ -33,7 +43,7 @@ const Skills = ({data}) => {
 							<div className="card-body">
 								<h4 className="card-title">Graphic Design</h4>
 								<p className="card-text">
-								{data?.['graphic-desc']}
+									{data?.['graphic-desc']}
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>
 								<p className="card-text" style={{ color: '#af3ecc' }}>
@@ -48,7 +58,12 @@ const Skills = ({data}) => {
 							</div>
 						</div>
 					</div>
-					<div className="col-md-4" style={{ paddingLeft: 0, paddingRight: 0 }}>
+					<div data-aos="zoom-out-down"
+						data-aos-offset="170"
+						data-aos-easing="ease-in-sine" 
+						className="col-md-4" 
+						style={{ paddingLeft: 0, paddingRight: 0 }}
+					>
 						<div className="card special-skill-item border-0">
 							<div className="card-header bg-transparent border-0">
 								<i className="icon fa-pie-chart" />
@@ -58,7 +73,7 @@ const Skills = ({data}) => {
 									Statistics &amp; Operations Research
 								</h4>
 								<p className="card-text">
-								{data?.['or-desc']}
+									{data?.['or-desc']}
 
 								</p>
 								<h5 className="text-center card-title">Technologies</h5>

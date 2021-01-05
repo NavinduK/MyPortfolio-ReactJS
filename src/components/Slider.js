@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+AOS.init();
 
 const Slider = ({ wdata, sdata }) => {
 	return (
@@ -9,19 +11,20 @@ const Slider = ({ wdata, sdata }) => {
 					<div className="container">
 						<div className="block-height-top">
 							<h2
+								data-aos="zoom-in-down" data-aos-duration="1500"
 								className="text-white"
 								style={{ fontSize: '2rem', textAlign: 'center'}}
 							>
 								Web & Mobile Development
 							</h2>
 							<div className="d-flex justify-content-center row align-items-center">
-								<div className="col-md-12 col-lg-5 text">
+								<div data-aos="flip-right" data-aos-offset="180" data-aos-duration="1500" className="col-md-12 col-lg-5 text">
 									<p className="mb-0 text-white">
 										{sdata}
 									</p>
 								</div>
 								<div className="col-md-12 col-lg-6">
-									<div className="portfolio-laptop-mockup">
+									<div data-aos="flip-left" data-aos-offset="200" data-aos-duration="1500" className="portfolio-laptop-mockup">
 										<div className="screen">
 											<div
 												className="screen-content"
@@ -102,7 +105,7 @@ const Slider = ({ wdata, sdata }) => {
 									</div>
 								</div>
 							</div>
-							<div className="text-center seemoreslider">
+							<div data-aos="zoom-in" className="text-center seemoreslider">
 								<Link style={{ color: '#fff', fontWeight:'600' }} to="/web-design">See More</Link>
 							</div>
 						</div>
