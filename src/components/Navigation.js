@@ -6,11 +6,11 @@ const Navigation = () => {
 
 	return (
 		<div>
-			<nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+			<nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient4">
 				<div className="container">
-					<Link style={{ display: 'flex' }} className="navbar-brand d-xl-flex logo" to="/">
+					<Link style={{ display: 'flex' }} className="justify-content-center align-content-center navbar-brand d-xl-flex logo" to="/">
 						<img className="rubberBand animated" alt="Navindu Kavishka Logo" src={logo} height="50px" />
-						<h5 className="d-xl-flex logo-text" style={{ marginLeft: '1rem', marginTop: '0.75rem' }}>
+						<h5 className="mt-auto mb-auto d-xl-flex logo-text" style={{ marginLeft: '1rem' }}>
 							Navindu Kavishka
 						</h5>
 					</Link>

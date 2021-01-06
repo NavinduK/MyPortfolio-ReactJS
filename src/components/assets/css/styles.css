@@ -53,7 +53,7 @@ p {
         height: 240px !important;
     }
     .portfolio-block-top {
-        padding-top: 120px !important;
+        padding-top: 105px !important;
     }
 }
 @media (min-width: 768px) {
@@ -74,6 +74,10 @@ p {
     padding: 5vh 0 5vh 0;
 }
 .gradient {
+    background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
+    color: #fff;
+}
+.gradient4 {
     background: linear-gradient(-60deg, #6f0782, #b647d2) !important;
     color: #fff;
 }
@@ -308,4 +312,16 @@ p {
 
 .card {
     box-shadow: none !important;
+}
+
+@media(max-width:800px){
+    .SRLCaptionText{
+        padding: 0 3vw !important;
+    }
+}
+
+@media(min-width:800px){
+    .SRLCaptionText{
+        padding: 0 15vw !important;
+    }
 }

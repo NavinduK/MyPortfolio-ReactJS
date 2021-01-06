@@ -2,6 +2,8 @@ import React from 'react';
 import "./assets/css/contact.css"
 import firebase from 'firebase';
 import { useForm } from "react-hook-form";
+import AOS from 'aos';
+AOS.init();
 
 const Contact = () => {
 
@@ -24,7 +26,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="formcon container-contact100">
+    <div data-aos="zoom-in-down" data-aos-duration="1500"  data-aos-offset="250"  className="formcon container-contact100">
       <div className="wrap-contact100">
         <form onSubmit={handleSubmit(onSubmithandle)} className="contact100-form validate-form">
           <span className="contact100-form-title">

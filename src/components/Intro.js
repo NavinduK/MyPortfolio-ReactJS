@@ -13,7 +13,7 @@ const Intro = () => {
 			<div className="container">
 				<div className="row align-items-center block-height-top">
 					<div
-						data-aos="flip-right" data-aos-delay="50"
+						data-aos="flip-right" data-aos-delay="50" data-aos-duration="1200" data-aos-easing="ease-in-sine"
 						className="col-md-12 col-lg-6 offset-lg-1 text"
 						style={{ paddingTop: '3vh' }}
 					>
@@ -34,10 +34,10 @@ const Intro = () => {
 								<Link style={{ color: '#fff', fontWeight:'600' }} to="/navindu-kavishka">My Profile</Link>
 						</div>
 					</div>
-					<div data-aos="flip-right" data-aos-delay="50" className="col-md-12 col-lg-5 text-center">
+					<div data-aos="flip-left" data-aos-duration="1300" data-aos-easing="ease-in-sine" data-aos-delay="50" className="col-md-12 col-lg-5 text-center">
 						<img  alt="Navindu Kavishka Intro" className="intro-img" src={introimg} height="465px" />
 					</div>
-					<div data-aos="zoom-in" data-aos-offset="-50" data-aos-delay="50" className="text-center m-auto pt-3 seemoreprofile2">
+					<div data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease-in-sine" data-aos-offset="-50" data-aos-delay="50" className="text-center m-auto pt-3 seemoreprofile2">
 						<Link style={{ color: '#fff', fontWeight:'600' }} to="/navindu-kavishka">My Profile</Link>
 					</div>
 				</div>

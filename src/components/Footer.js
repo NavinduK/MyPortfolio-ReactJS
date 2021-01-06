@@ -85,7 +85,7 @@ const Footer = ({links,contacts}) => {
 					<hr style={{backgroundColor: 'white', opacity:0.5}}/>
 					<div className="d-flex justify-content-center" style={{ marginBottom: '0px', fontSize: '15px'}}>
 						<i className="fa fa-copyright" style={{ fontSize: '15px', marginRight:'5px'}}></i>
-						<p>2021 Navindu, All Rights Reserved</p>
+						<p>2021 Navindu Kavishka, All Rights Reserved</p>
 					</div>
 				</div>
 			</footer>

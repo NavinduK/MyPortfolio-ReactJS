@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../components/assets/css/lightgallery.css';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import { SRLWrapper } from 'simple-react-lightbox';
+AOS.init();
 
 const Gallery = ({ data, sdata }) => {
-
-	useEffect(() => {
-		window.lightGal();
-	}, []);
 
 	return (
 		<div style={{ background: 'rgb(255, 255, 255)' }} >
@@ -20,50 +19,31 @@ const Gallery = ({ data, sdata }) => {
 							{sdata}
 						</p>
 					</div>
-					<ul id="lightgallery" className="list-unstyled row">
-						<li
-							data-aos="flip-up" data-aos-offset="150"  
-							className="allcol col-6 col-sm-3 col-lg-3"
-							data-src={data[14]?.img}
-							data-sub-html={`<h4>${data[14]?.title}</h4><p>${data[14]?.desc}</p>`}
-						>
-							<a href="/#" style={{ cursor: 'pointer' }}>
-								<img className="img-responsive" src={data[14]?.thumb} alt={data[14]?.title} />
-							</a>
-						</li>
-						<li
-							data-aos="flip-up" data-aos-offset="150" data-aos-delay="100" 
-							className="allcol col-6 col-sm-3 col-lg-3"
-							data-src={data[5]?.img}
-							data-sub-html={`<h4>${data[5]?.title}</h4><p>${data[5]?.desc}</p>`}
-						>
-							<a href="/#" style={{ cursor: 'pointer' }}>
-								<img className="img-responsive" src={data[5]?.thumb} alt={data[5]?.title} />
-							</a>
-						</li>
-						<li
-							data-aos="flip-up" data-aos-offset="150" data-aos-delay="100" 
-							className="allcol col-6 col-sm-3 col-lg-3"
-							data-src={data[4]?.img}
-							data-sub-html={`<h4>${data[4]?.title}</h4><p>${data[4]?.desc}</p>`}
-						>
-							<a href="/#" style={{ cursor: 'pointer' }}>
-								<img className="img-responsive" src={data[4]?.thumb} alt={data[4]?.title} />
-							</a>
-						</li>
-						<li
-							data-aos="flip-up" data-aos-offset="150" data-aos-delay="150" 
-							className="allcol col-6 col-sm-3 col-lg-3"
-							data-src={data[1]?.img}
-							data-sub-html={`<h4>${data[1]?.title}</h4><p>${data[1]?.desc}</p>`}
-						>
-							<a href="/#" style={{ cursor: 'pointer' }}>
-								<img className="img-responsive" src={data[1]?.thumb} alt={data[1]?.title} />
-							</a>
-						</li>
-
-					</ul>
-					<div data-aos="zoom-in" className="text-center mt-4 seemoregallery">
+					<SRLWrapper>
+						<div className="row m-0 justify-content-center">
+							<div data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-sine" className="text-center mb-3 p-0 col-6 col-sm-4 col-lg-3">
+								<a className="m-auto" href={data[14]?.img}>
+									<img style={{ width: '95%' }} src={data[14]?.thumb} alt={data[14]?.desc} />
+								</a>
+							</div>
+							<div data-aos="flip-up" data-aos-duration="1700" data-aos-delay="200" data-aos-easing="ease-in-sine" className="text-center mb-3 p-0 col-6 col-sm-4 col-lg-3">
+								<a className="m-auto" href={data[5]?.img}>
+									<img style={{ width: '95%' }} src={data[5]?.thumb} alt={data[5]?.desc} />
+								</a>
+							</div>
+							<div data-aos="flip-up" data-aos-duration="1900" data-aos-delay="200" data-aos-easing="ease-in-sine" className="text-center mb-3 p-0 col-6 col-sm-4 col-lg-3">
+								<a className="m-auto" href={data[4]?.img}>
+									<img style={{ width: '95%' }} src={data[4]?.thumb} alt={data[4]?.desc} />
+								</a>
+							</div>
+							<div data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300" data-aos-easing="ease-in-sine" className="text-center mb-3 p-0 col-6 col-sm-4 col-lg-3">
+								<a className="m-auto" href={data[1]?.img}>
+									<img style={{ width: '95%' }} src={data[1]?.thumb} alt={data[1]?.desc} />
+								</a>
+							</div>
+						</div>
+					</SRLWrapper>
+					<div data-aos="zoom-in" data-aos-offset="40" className="text-center mt-4 seemoregallery">
 						<Link style={{ color: '#b647d2', fontWeight: '600' }} to="/graphic-design">See More</Link>
 					</div>
 				</div>

@@ -8,7 +8,7 @@ const Slider = ({ wdata, sdata }) => {
 		<div className="website ">
 			<div className="parallax">
 				<div className="gradientParallax">
-					<div className="container">
+					<div style={{paddingTop:'20px',paddingBottom:'20px'}} className="container">
 						<div className="block-height-top">
 							<h2
 								data-aos="zoom-in-down" data-aos-duration="1500"
@@ -18,7 +18,7 @@ const Slider = ({ wdata, sdata }) => {
 								Web & Mobile Development
 							</h2>
 							<div className="d-flex justify-content-center row align-items-center">
-								<div data-aos="flip-right" data-aos-offset="180" data-aos-duration="1500" className="col-md-12 col-lg-5 text">
+								<div data-aos="flip-right" data-aos-offset="100" data-aos-duration="1500" className="col-md-12 col-lg-5 text">
 									<p className="mb-0 text-white">
 										{sdata}
 									</p>
@@ -105,7 +105,7 @@ const Slider = ({ wdata, sdata }) => {
 									</div>
 								</div>
 							</div>
-							<div data-aos="zoom-in" className="text-center seemoreslider">
+							<div data-aos="zoom-in" data-aos-offset="40" className="text-center seemoreslider">
 								<Link style={{ color: '#fff', fontWeight:'600' }} to="/web-design">See More</Link>
 							</div>
 						</div>

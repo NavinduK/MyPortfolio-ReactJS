@@ -4,19 +4,19 @@ AOS.init();
 
 const Skills = ({ data }) => {
 	return (
-		<div className="portfolio-block skills " style={{ background: '#fff', padding: '60px 10px 10px 10px' }}>
+		<div className="portfolio-block skills " style={{ background: '#fff', padding: '40px 10px 10px 10px' }}>
 			<div data-aos="zoom-in-down" data-aos-duration="1500" className="container">
 				<h2 className="text-center" style={{ marginBottom: '4vh', fontSize: '2.2rem' }}>
 					Special Skills
 				</h2>
-				<div className="row" style={{ marginTop: 0 }}>
-					<div data-aos="zoom-out-down"
+				<div className="m-0 pt-3 row">
+					<div data-aos="fade-down"
 						data-aos-offset="170"
 						data-aos-easing="ease-in-sine" 
 						className="col-md-4"
 					>
 						<div className="card special-skill-item border-0">
-							<div className="card-header bg-transparent border-0">
+							<div className="p-0 card-header bg-transparent border-0">
 								<i className="icon fa-desktop" />
 							</div>
 							<div className="card-body">
@@ -31,13 +31,13 @@ const Skills = ({ data }) => {
 							</div>
 						</div>
 					</div>
-					<div data-aos="zoom-out-down"
+					<div data-aos="fade-down"
 						data-aos-offset="170"
 						data-aos-easing="ease-in-sine" 
 					 	className="col-md-4"
 					 >
 						<div className="card special-skill-item border-0">
-							<div className="card-header bg-transparent border-0">
+							<div className="p-0 card-header bg-transparent border-0">
 								<i className="icon fa-paint-brush" />
 							</div>
 							<div className="card-body">
@@ -58,14 +58,14 @@ const Skills = ({ data }) => {
 							</div>
 						</div>
 					</div>
-					<div data-aos="zoom-out-down"
+					<div data-aos="fade-down"
 						data-aos-offset="170"
 						data-aos-easing="ease-in-sine" 
 						className="col-md-4" 
 						style={{ paddingLeft: 0, paddingRight: 0 }}
 					>
 						<div className="card special-skill-item border-0">
-							<div className="card-header bg-transparent border-0">
+							<div className="p-0 card-header bg-transparent border-0">
 								<i className="icon fa-pie-chart" />
 							</div>
 							<div className="card-body">
