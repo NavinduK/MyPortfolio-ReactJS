@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/assets/css/lightgallery.css';
+// import '../components/assets/css/lightgallery.css';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import { SRLWrapper } from 'simple-react-lightbox';

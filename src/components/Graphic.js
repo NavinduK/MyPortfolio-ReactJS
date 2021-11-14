@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/assets/css/lightgallery.css';
+// import '../components/assets/css/lightgallery.css';
 import { SRLWrapper } from 'simple-react-lightbox';
 import AOS from 'aos';
 AOS.init();
